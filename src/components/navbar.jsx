@@ -13,7 +13,7 @@ export default function Navbar() {
             </nav>
             
             </div>
-            <h1 className="h-80 mt-20 text-white">LET'S <span>BUILD</span> TOGETHER</h1>
+            <h1 className="h-80 mt-20 text-white">LETS <span>BUILD</span> TOGETHER</h1>
       </div>
      
     )
