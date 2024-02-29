@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div id="about" className="hero_section">
-      <div className="cross_box"></div>
+      
       <div className="left">
         <h1>About Us</h1>
         <p>
