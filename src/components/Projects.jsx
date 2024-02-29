@@ -1,6 +1,7 @@
 export default function Projects() {
     return (
     <div id="projects">
+        // eslint-disable-next-line react/no-unescaped-entities
     <h1 className="text-center py-10">Pro<span id="black">jects</span></h1>
         <div className="Projects_container flex flex-row justify-items-center h-90">
            
