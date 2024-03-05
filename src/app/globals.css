@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,14 +12,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+ 
+ 
 }
 
 body {
-  overflow-x: hidden;
-  width: 1200px;
+  overflow-x: none
+  ;
 }
+
+
+
 :root {
   --primary-bg-color: rgb(48, 48, 48);
   --secondary-bg-color: rgb(242, 242, 242);
@@ -20,15 +33,30 @@ body {
   --card-bg-color: #f1f5f9;
 }
 
+
 /* navbar styles */
 
 .nav_container {
-  width: 100%;
+  width: 100vw;
+  
   background-color: var(--primary-bg-color);
-  display: flex;
-  justify-content: space-between;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient: horizontal;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: row;
+         flex-direction: row;
+ -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+         justify-content: space-between;
+ 
+  
 }
 
+#nav_box {
+  display: none;
+}
 .nav_head {
   color: white;
   padding: 0.8rem 2rem;
@@ -36,15 +64,28 @@ body {
 
 .navbar {
   padding: 0.8rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nav_container .nav_head {
   font-weight: 700;
   font-size: 2rem;
 }
+.hamburger {
+  display: none;
+}
+
 span {
   color: var(--yellow-color);
 }
@@ -64,15 +105,18 @@ span {
 .Landingpage {
   background-color: var(--primary-bg-color);
   text-shadow: 2px 2px black;
+ overflow: hidden;
+  height: 50rem;
+  width: 100vw;
 
-  height: 100vh;
 }
 
 .Landingpage h1 {
-  font-size: 7rem;
+  font-size: 12vw;
   font-weight: 900;
-  margin-left: 100px;
+  margin-left: 1rem;
   text-align: left;
+ 
   
 }
 
@@ -81,50 +125,36 @@ span {
 .hero_section {
   background-color: var(--yellow-color);
   margin-inline: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+ 
 
   width: 100%;
-  height: 90vh;
+  height: 35rem;
 
   overflow: hidden;
+padding: 4rem;
 }
-.cross_box {
-  position: absolute;
-  width: 1200px;
-  height: 600px;
-  z-index: -1;
-  transform: translateX(65%) rotate(25deg);
 
-  background-color: var(--yellow-color);
-}
-.hero_section .left {
-  padding-top: 3rem;
-  width: 50%;
-}
+
 
 h1,
-p,
-h3 {
+p {
   color: white;
   letter-spacing: 2px;
+  text-align: center;
+ 
 }
 
-.hero_section .left h3 {
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-}
+
 h1 {
   font-weight: bolder;
-  font-size: 4rem;
+  font-size: 6vw;
   text-align: center;
   letter-spacing: 2px;
 }
-.hero_section .left p {
+.hero_section p {
   font-weight: 500;
-
+  margin-top: 2rem;
+  font-size: 1.7vw;
   line-height: 2;
   letter-spacing: 2px;
 }
@@ -140,11 +170,18 @@ h1 {
 
 .footer_links {
   width: 25%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
   max-height: fit-content;
   margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer_links i {
   font-size: 50px;
@@ -160,11 +197,13 @@ h1 {
 #contact {
   width: 100%;
   background-color: var(--primary-bg-color);
+  height: 35rem;
 }
 .contact_form {
+  height: 100%;
   color: black;
   background-color: transparent;
-  height: 300px;
+ 
 
 }
 .contact_form input {
@@ -174,6 +213,7 @@ h1 {
   
 }
 .contact_form label {
+  
   color: rgb(255, 255, 255);
 }
 
@@ -187,16 +227,29 @@ h1 {
 }
 
 .service_text {
-  position: relative;
-  width: 30%;
+ 
+  font-size: 6vw;
   margin-inline: auto;
 }
 
+.service_container p {
+  font-size: 1.7vw;
+}
 /* // projects  */
 .Projects_container {
   width: 100%;
-  height: 100vh;
-  justify-content: space-around;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  
   
 }
 #black {
@@ -206,10 +259,10 @@ h1 {
   background-color: var(--yellow-color);
 }
 .Project {
-width: 20%;
+width: 20vw;
   background-color: var(--card-bg-color);
-  height: 400px;
-  margin-inline: 10px;
+  height: 25rem;
+  margin-inline: .2rem;
   position: relative;
   border-radius: 10px;
  
@@ -217,18 +270,22 @@ width: 20%;
 
 .Project img {
   aspect-ratio: 3/2;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Project a {
   color: rgb(25, 25, 25);
   border: 1px white;
-
+  font-size: 1.5vw;
   position: absolute;
+  overflow: hidden;
   width: 80%;
-  bottom: 1rem;
+  bottom: .2vw;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .Project a::before {
   content: "Link ";
@@ -236,7 +293,9 @@ width: 20%;
 .Project a:hover {
   color: rgb(33, 65, 245);
 }
-
+.Project p {
+  font-size: 1.7vw;
+}
 
 /* // scrollbar styles */
 
@@ -247,7 +306,8 @@ width: 20%;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
@@ -266,7 +326,65 @@ width: 20%;
 
 
 /* // responsiveness */
-/* @media screen and (max-width:320px) {
+@media only screen and (max-width: 774px) {
+  /* CSS rules for mobile devices */
+  .navbar {
+    display: none;
+  }
+  #nav_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #nav_box a {
+font-size:2.5vw; 
+padding: 5px 20px;
+  }
+  .hamburger {
+    color: white;
+    display: block;
+    font-size: 1.8em;
+    
+  }
+  .hamburger:hover {
+    color: var(--yellow-color);
+  }
+ .Landingpage {
+  height: 30rem;
+ }
+  .nav_container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 1rem;
+  }
 
-  
-} */
+  /* // service containerk */
+  .service_container .frontend_container {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+  .service_container .Backend_container {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+   direction: rtl;
+  }
+  /* // about section  */
+  .hero_section {
+    height: auto;
+    width: 100vw;
+  }
+
+  /* // project container */
+  .Projects_container {
+   row-gap: 16px;
+ 
+  }
+  .Project {
+    width: 40%;
+    height: 16rem;
+
+  }
+}

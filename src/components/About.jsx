@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div id="about" className="hero_section">
       
-      <div className="left">
+    
         <h1>About Us</h1>
         <p>
           Hi my name is Harinder Thakur and i am a full stack developer. I am in
@@ -14,7 +14,7 @@ export default function About() {
           functioning full stack websites. I have build multiple full stack
           website till date. We Provide best after service also.
         </p>
-      </div>
+    
     </div>
   );
 }

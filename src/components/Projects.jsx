@@ -3,13 +3,9 @@ export default function Projects() {
     <div id="projects">
         {/* eslint-disable-next-line react/no-unescaped-entities   */}
     <h1 className="text-center py-10">Pro<span id="black">jects</span></h1>
-        <div className="Projects_container flex flex-row justify-items-center h-90">
+        <div className="Projects_container">
            
-            <div className="Project bg-slate-100  p-4 text-center">
-                <img src='/netflix.jpg' alt="no image" />
-                <p className="text-black pt-2">It is a clone of Netflix which is made in pure HTML, css and Javascript.</p>
-                <a href="https://www.netflix.com">https://www.netflix.com</a>
-            </div>
+            
             
             <div className="Project bg-slate-100  p-4 text-center">
                 <img src="/flipkart.jfif" alt="" />

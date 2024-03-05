@@ -4,7 +4,7 @@ import backend from "@/../../public/backend.png"
 export default function Services() {
     return (
         <div id="service" className=" service_container py-10 flex flex-col">
-            <h1 className="service_text text-center mb-">Services</h1>
+            <h1 className="service_text text-center">Services</h1>
             <div className="frontend_container grid grid-cols-2 my-6 h-80">
             <div className="frontend_img mx-auto">
                <Image src={frontend} width={500} height={500}></Image>
