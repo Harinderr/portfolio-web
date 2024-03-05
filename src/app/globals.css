@@ -20,8 +20,7 @@
 }
 
 body {
-  overflow-x: none
-  ;
+  overflow-x: hidden;
 }
 
 
@@ -319,7 +318,7 @@ width: 20vw;
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: #080808; 
 }
 
 
