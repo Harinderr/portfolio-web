@@ -1,0 +1,110 @@
+.Landingpage {
+    height: 40rem;
+    background-color: rgb(37 99 235);
+   
+}
+.Landingpage .nav_head {
+    color: white;
+    font-size: 2rem;
+}
+
+.nav_container {
+    padding-inline: 4rem;
+    padding-block: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    
+}
+
+.navbar {
+    color : white;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navbar a {
+    letter-spacing: 1px;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+ .contact_nav {
+    background-color: rgb(37 99 235);
+    
+    padding: .5rem;
+}
+.contact_nav:hover {
+    background-color: white;
+    color: blue;
+}
+
+
+@media screen  and (min-width: 1281px) {
+    .navbar {
+        width: 45%;
+    }
+    .lp_wrapper {
+        width: 60%;
+    }
+}
+@media screen  and (max-width: 1280px) {
+    .navbar {
+        width: 45%;
+    }
+    .lp_wrapper {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .navbar {
+        width: 60%;
+    }
+    .lp_wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .Landingpage {
+        height: fit-content;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+.Landingpage {
+    height: 40rem;
+}
+ .nav_container {
+    padding-inline: 1.4rem;
+ }
+ .lp_wrapper {
+    padding: 1rem;
+    
+ }
+ .lp_text {
+    font-size: 2rem;
+ }
+}
+
+
+

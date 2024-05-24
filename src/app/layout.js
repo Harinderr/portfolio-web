@@ -1,7 +1,11 @@
-import { Inter } from 'next/font/google'
+import { Rubik } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const rubik = Rubik({ 
+  subsets: ['latin'],
+   weight : ['300','400','500','600','700','800'],
+  variable : '--font-rubik'
+ })
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +19,7 @@ export default function RootLayout({ children }) {
      
 
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={rubik.variable}>{children}</body>
 
     </html>
   )

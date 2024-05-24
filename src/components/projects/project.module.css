@@ -1,0 +1,149 @@
+
+.projects {
+    background-color: rgb(32, 43, 61);
+}
+
+@media  screen and (min-width : 1200px) {
+    
+    .heading {
+        font-size: 4rem;
+        font-weight: 600;
+
+    }
+    .projects h3 {
+        font-size: 2.8rem;
+    }
+    .projects p {
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 1.6;
+    }
+    .project {
+        width: 90%;
+        margin-inline: auto;
+    }
+    .project img {
+        width: 500px;
+    }
+    .skill_box {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .projects a {
+        font-size: 1.5rem;
+    }
+   
+}
+
+@media screen and (max-width: 1500px) {
+    .heading {
+        font-size: 3rem;
+        font-weight: 600;
+
+    }
+    .projects h3 {
+        font-size: 2rem;
+    }
+    .projects p {
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 1.4;
+    }
+    .project {
+        width: 90%;
+        margin-inline: auto;
+        padding: 2rem;
+    }
+  
+    .skill_box {
+        font-size: 1.2rem;
+        padding: .8rem;
+    }
+    .projects a {
+        font-size: 1.2rem;
+    }
+   
+}
+
+@media screen and (max-width : 1200px) {
+    
+    .projects h3 {
+        font-size: 1.6rem;
+    }
+    .projects p {
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.2;
+    }
+    .project {
+        width: 90%;
+        margin-inline: auto;
+    }
+  
+    .skill_box {
+        font-size: 1rem;
+        padding: .6rem;
+    }
+    .projects a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+   .img_container {
+    width: 50rem;
+   } 
+}
+
+@media screen and (max-width : 768px) {
+    .project {
+        flex-direction: column;
+        width: 50%;
+       
+    }
+    .projects_container {
+        flex-direction: row;
+    }
+    .img_container {
+        height: 200px;
+        width: 100%;
+    }
+    .projects h3 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .projects p {
+        font-size: .8rem;
+        text-align: left;
+       
+    }
+    .project {
+        width: 45%;
+        margin-inline: auto;
+        padding: 1rem;
+    }
+  
+    .skill_box {
+        font-size: .8rem;
+        padding: .4rem;
+    }
+    .projects a {
+        font-size: .8rem;
+    }
+    .text_wrapper {
+        padding: .5rem 0;
+    }
+}
+
+@media  screen and (max-width : 600px) {
+    .project {
+        padding: 1rem;
+        width: 75%;
+    }
+    .projects_container {
+        flex-direction: column;
+    }
+
+   
+    
+}
