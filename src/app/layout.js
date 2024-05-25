@@ -1,10 +1,10 @@
-import { Rubik } from 'next/font/google'
+import {Changa } from 'next/font/google'
 import './globals.css'
 
-const rubik = Rubik({ 
+const changa = Changa({ 
   subsets: ['latin'],
    weight : ['300','400','500','600','700','800'],
-  variable : '--font-rubik'
+  variable : '--font-changa'
  })
 
 export const metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
      
 
       </head>
-      <body className={rubik.variable}>{children}</body>
+      <body className={changa.variable}>{children}</body>
 
     </html>
   )

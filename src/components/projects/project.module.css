@@ -3,6 +3,8 @@
     background-color: rgb(32, 43, 61);
 }
 
+
+
 @media  screen and (min-width : 1200px) {
     
     .heading {
@@ -90,9 +92,9 @@
 }
 
 @media screen and (max-width: 1024px) {
-   .img_container {
+   /* .img_container {
     width: 50rem;
-   } 
+   }  */
 }
 
 @media screen and (max-width : 768px) {
@@ -103,6 +105,7 @@
     }
     .projects_container {
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .img_container {
         height: 200px;
@@ -131,6 +134,7 @@
         font-size: .8rem;
     }
     .text_wrapper {
+        width: 100%;
         padding: .5rem 0;
     }
 }

@@ -16,11 +16,11 @@ export default function Projects() {
         
 
         <div className={`${styles.project}  bg-slate-700  p-12 text-center flex flex-row mx-auto  rounded-lg`}>
-        <div className={`${styles.img_container}  w-full h-50 relative`}>
-        <Image src={"/netflix.jpg"} layout="fill" style={{objectFit:'cover'}} className="rounded-lg"></Image>
+        <div className={`${styles.img_container}  w-1/2 h-50 relative`}>
+        <Image src={"/blog.jpg"} layout="fill" objectFit="cover" className="rounded-lg"></Image>
         </div>
           
-          <div className={`${styles.text_wrapper} p-4  relative`}>
+          <div className={`${styles.text_wrapper} p-4 w-1/2 relative`}>
             <h3 className="font-bold text-xl mb-4 text-white text-left leading-8">
               Sports Blog Website
             </h3>
@@ -56,11 +56,11 @@ export default function Projects() {
           </div>
         </div>
         <div className={`${styles.project}  bg-slate-700  p-12 text-center flex flex-row mx-auto  rounded-lg`}>
-        <div className={`${styles.img_container}  w-full h-50 relative`}>
-        <Image src={"/netflix.jpg"} layout="fill" objectFit="cover" className="rounded-lg"></Image>
+        <div className={`${styles.img_container}  w-1/2 h-50 relative`}>
+        <Image src={"/chat.jpg"} layout="fill" objectFit="cover" className="rounded-lg"></Image>
         </div>
           
-          <div className={`${styles.text_wrapper} p-4  relative`}>
+          <div className={`${styles.text_wrapper} p-4 w-1/2 relative`}>
             <h3 className="font-bold text-xl mb-4 text-white text-left leading-8">
               Chat Application
             </h3>
@@ -95,7 +95,80 @@ export default function Projects() {
               </div>
              
             </div>
-            <a href="https://next-blog-sand-ten-63.vercel.app/" className="font-normal mx-auto my-4 text-white" target="blank">
+            <a href="https://rtcfrontend.vercel.app" className="font-normal mx-auto my-4 text-white" target="blank">
+              Visit Link
+            </a>
+          </div>
+        </div>
+        <div className={`${styles.project}  bg-slate-700  p-12 text-center flex flex-row mx-auto  rounded-lg`}>
+        <div className={`${styles.img_container}  w-1/2 h-50 relative`}>
+        <Image src={"/meet.jpg"} layout="fill" objectFit="cover" className="rounded-lg"></Image>
+        </div>
+          
+          <div className={`${styles.text_wrapper} p-4 w-1/2 relative`}>
+            <h3 className="font-bold text-xl mb-4 text-white text-left leading-8">
+              Video call App 
+            </h3>
+            <p className="text-white leading-8 ">
+            It is a video call website like zoom where users can join others video calls and can also create their own.
+            </p>
+              
+            <div className="h-fit bg-slate-600  p-2 rounded-md mt-2">
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+                WebRTC
+              </div>
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+               AgoraRTC
+              </div>
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+                AgoraRTM
+              </div>
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+                Javscript
+              </div>
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+             CSS
+              </div>
+           
+             
+            </div>
+            <a href="https://meetspace.netlify.app/" className="font-normal mx-auto my-4 text-white" target="blank">
+              Visit Link
+            </a>
+          </div>
+        </div>
+        <div className={`${styles.project}  bg-slate-700  p-12 text-center flex flex-row mx-auto  rounded-lg`}>
+        <div className={`${styles.img_container}  w-1/2 h-50 relative`}>
+        <Image src={"/groceo.jpg"} layout="fill" objectFit="cover" className="rounded-lg"></Image>
+        </div>
+          
+          <div className={`${styles.text_wrapper} p-4 w-1/2 relative`}>
+            <h3 className="font-bold text-xl mb-4 text-white text-left leading-8">
+              Grocery Website
+            </h3>
+            <p className="text-white leading-8 ">
+            It is a frontend of a Grocery website, build with raw css and javascript.
+            </p>
+              
+            <div className="h-fit   bg-slate-600  p-2 rounded-md mt-2">
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+                HTML
+              </div>
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+               CSS
+              </div>
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+                Javascript
+              </div>
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+                Bootstrap
+              </div>
+            <div className={`${styles.skill_box} inline-block p-3 mr-1 mb-1 tracking-wider font-semibold bg-slate-700 text-slate-200 rounded-md`}>
+                FontAwesome
+              </div>
+          
+            </div>
+            <a href="https://thunderous-lily-bd31e5.netlify.app/" className="font-normal mx-auto my-4 text-white" target="blank">
               Visit Link
             </a>
           </div>
